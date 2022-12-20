@@ -1,0 +1,174 @@
+<!--pages/home/home.wxml-->
+
+<!-- 0.Page Box STR -->
+<view class="page-box">
+
+  <!-- 1.轮播图 STR -->
+  <view class="swiper-box">
+    <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" mode=""/>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <!-- 1.轮播图 END -->
+
+  <!-- 2.产品导航 STR -->
+  <view class="product-navbar">
+    <!-- 2.1.产品导航内容 STR -->
+    <scroll-view scroll-x="{{ture}}"> <!-- true 允许横向滚动 -->
+      <view class="nav">
+        <view class="item current">全部</view> 
+        <view class="item">洗车</view> 
+        <view class="item">保养</view> 
+        <view class="item">轮胎</view>
+        <view class="item">维修</view> 
+        <view class="item">改装</view> 
+        <view class="item">套餐</view> 
+        <view class="item">会员</view> 
+        <view class="item">其他</view> 
+      </view>
+    </scroll-view>
+    <!-- 2.1.产品导航内容 END -->
+  </view>
+  <!-- 2.产品导航 END -->
+
+  <!-- 3.商品列表 STR -->
+  <view class="product-list">
+    <!-- 3.1.商品列表内容 STR -->
+
+    <!-- 产品1 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+    
+    <!-- 产品2 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+
+    <!-- 产品3 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+
+    <!-- 产品3 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+
+    <!-- 产品4 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+
+    <!-- 产品5 -->
+    <view class="item">
+      <!-- 3.1.L.产品图片 STR -->
+      <view class="product-image">
+        <!-- 产品图片1 -->
+        <image src="https://img13.360buyimg.com/n2/s270x270_jfs/t1/169113/16/12883/198886/60b73977E33423a4e/ddf1080285398a2e.jpg!q70.webp" mode=""/>
+      </view>
+      <!-- 3.1.L.产品图片 END -->
+
+      <!-- 3.1.R.产品信息 STR -->
+        <view class="product-info">
+          <!-- 产品名称 -->
+          <view class="product-title">【帮5洗车】单次标准洗车5座轿车 x26小型SUV车型汽车清洗美容 洗车服务</view>
+          <!-- 产品描述 -->
+          <view class="product-desc">【帮5养车618爆款商品火热促销中】空调可视化清洗套餐优惠大放送，领10元优惠券到手仅158元，立即抢购！领10元优惠券到手仅158元，立即抢购！ </view>
+          <!-- 产品价格 -->
+          <view class="product-price">¥10</view>
+        </view>
+      <!-- 3.1.R.产品信息 END -->
+    </view>
+
+
+  </view>
+  <!-- 3.商品列表 END -->
+
+<!-- 0.Page Box END -->
+</view>

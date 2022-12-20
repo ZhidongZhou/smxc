@@ -1,0 +1,102 @@
+/* pages/home/home.wxss */
+
+/* swiper 样式 */
+.swiper-box{
+  /* 1rpx = 0.5px */
+  padding: 30rpx; /* 15px */
+}
+
+/* swiper 固定高度 */
+.swiper-box swiper{
+  height: 320rpx; /* 160px */
+}
+
+/* swiper image 自适应 */
+.swiper-box swiper image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+/* product list 产品列表 样式 */
+.product-list image{
+  width: 100rpx;
+}
+
+/* 产品导航 */
+.product-navbar .nav{
+  overflow: hidden; /* 拍成横裂，父级加轻浮动，防止样式错乱 */
+  width: 2000rpx; /* 1000px: 多余元素不换行 */
+}
+
+/* 产品导航内容 */
+.product-navbar .nav .item{
+  float: left; /* 排成横列 */
+  width: 100rpx; /* 50px */
+  height: 60rpx; /* 30px */
+  border: solid 2rpx #eee; /* 边框 */
+  border-radius: 20rpx; /* 边框圆角 */
+  text-align: center; /* 文字左右居中 */
+  line-height: 60rpx; /* 文字上下居中 */
+  font-size: 32rpx; /* 字体大小16px */
+  margin-left: 20rpx; /* 文字间距 */ 
+}
+
+/* 产品导航内容 (选中效果) */
+.product-navbar .nav .item.current{ /* item & current 同时存在下列样式才会生效 */
+  color: #EB4451;
+}
+
+/* 产品列表 -> 产品 */
+.product-list .item{
+  display: flex; /* 元素拍成一整行 */
+  border-bottom: solid 2rpx #eee; /* 产品之间的分割线 */
+}
+
+/* 产品列表 -> 产品图片(盒子) */
+.product-list .item .product-image{
+  height: 200rpx; /* 图片盒子高度: 100px */
+  width: 200rpx; /* 图片盒子宽度: 100px */
+}
+
+/* 产品列表 -> 产品图片(图片) */
+.product-list .item .product-image image{
+  height: 200rpx; /* 图片高度: 100px */
+  width: 200rpx; /* 图片宽度: 100px */ 
+  padding: 30rpx 20rpx; /* 外边距, 上下15px, 左右10px */
+}
+
+/* 产品列表 -> 产品内容 */
+.product-list .item .product-info{
+   margin-left: 20rpx; /* 产品内容 & 产品图片 的间距: 10px */
+   padding: 30rpx 20rpx; /* 外边距, 上下15px, 左右10px */
+}
+
+/* 产品列表 -> 产品内容 -> 产品名称 */
+.product-list .item .product-info .product-title{
+  font-size: 32rpx; /* 产品名称字体大小: 16px */
+  /* 产品名称只显示2行, 超过隐藏 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 只显示2行 */
+  overflow: hidden; /* 超过隐藏 */
+}
+
+/* 产品列表 -> 产品内容 -> 产品描述 */
+.product-list .item .product-info .product-desc{
+  font-size: 28rpx; /* 产品描述字体大小: 14px */
+  color: #999; /* 产品描述字体颜色: 浅灰色 */
+  margin-top: 4rpx; /* 产品描述上间距: 2px */
+  /* 产品描述只显示2行, 超过隐藏 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 只显示2行 */
+  overflow: hidden; /* 超过隐藏 */
+}
+
+/* 产品列表 -> 产品内容 -> 产品价格 */
+.product-list .item .product-info .product-price{
+  font-size: 28rpx; /* 产品价格字体大小: 14px */
+  color: #EB4451; /* 产品价格字体颜色: 红色 */
+  margin-top: 4rpx; /* 产品价格上间距: 2px */
+}

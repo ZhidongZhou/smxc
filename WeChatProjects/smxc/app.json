@@ -1,12 +1,47 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/cart/cart",
+    "pages/my/my"
   ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#EB4451",
+    "list": [
+    {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/images/tabBarIcon/tab_home_nor@3x.png",
+      "selectedIconPath": "assets/images/tabBarIcon/tab_home_fill@3x.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "assets/images/tabBarIcon/tab_cart_nor@3x.png",
+      "selectedIconPath": "assets/images/tabBarIcon/tab_cart_fill@3x.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "assets/images/tabBarIcon/tab_classify_nor.png",
+      "selectedIconPath": "assets/images/tabBarIcon/tab_classify_fill@3x.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "assets/images/tabBarIcon/tab_my_nor@3x.png",
+      "selectedIconPath": "assets/images/tabBarIcon/tab_my_fill@3x.png"
+    }
+  ]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "上门洗车",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
