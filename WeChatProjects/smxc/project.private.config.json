@@ -1,7 +1,8 @@
 {
   "projectname": "smxc",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false
   },
   "condition": {
     "miniprogram": {
