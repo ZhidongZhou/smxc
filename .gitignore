@@ -1,2 +1,3 @@
 .DS_Store
 ./doc/proposal*
+api/node-koa2/node_modules/*
